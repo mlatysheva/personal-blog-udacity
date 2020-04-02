@@ -98,6 +98,7 @@ button:hover{
 }
 .right {
     border: 2px solid rgb(32, 99, 143);
+    width: 30%;
     padding: 10px;
     margin-left: 5px;
     margin-bottom: 10px;
