@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 400 px 150 px;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "ft";
+    border: 5px dashed red
+}
+.nested-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.header {
+    grid-area: hd;
+    border: 5px aquamarine;
+
+}

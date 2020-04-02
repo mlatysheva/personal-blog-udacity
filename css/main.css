@@ -1,0 +1,139 @@
+@import “./layout”;
+@import “./images”;
+@import “./blog-cards”;
+/* Type selectors */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(50, 67, 77);
+    background-color: rgb(174, 199, 211);
+    margin: 5px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  
+}
+a {
+    color: rgb(32, 99, 143);
+    
+}
+p {
+    color: rgb(5, 30, 44);
+    line-height: 1.2em;
+  }
+button {
+    background-color: rgb(32, 99, 143);
+    height: 50px;
+    width: 150px;
+    color: papayawhip;
+    border-radius: 5px;
+    font-size: larger;
+}
+button:hover{
+    background-color: rgb(17, 50, 71);
+}
+/* id selectors */
+#content {
+    color: rgb(5, 30, 44);
+    font-size: medium;
+}
+
+/* Class selectors */
+.container {
+    /*display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "hd"
+    "nav"
+    "mn"
+    "art"
+    "right"
+    "ft";*/
+    border: 3px solid rgb(32, 99, 143);
+}
+.header {
+    display: grid;
+    grid-area: hd;
+    border-bottom: 2px solid rgb(32, 99, 143);
+    padding: 10px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.footer {
+    display: grid
+    grid-area: ft;
+    border-top: 2px solid rgb(32, 99, 143);
+    padding: 10px;
+    text-align: center;
+
+}
+.posts {
+    border: 2px solid rgb(32, 99, 143);
+    padding: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    flex-grow: 3;
+}
+.post-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-grow: 3;
+}
+.right {
+    border: 2px solid rgb(32, 99, 143);
+    padding: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    flex-grow: 1;
+}
+ *{
+    border: 1px solid red !important;
+  }
+.menu-item{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: papayawhip;
+    background-color: rgb(106, 173, 211);
+    border-radius: 5px;
+}
+
+.menu-item:hover{
+    background-color: rgb(197, 219, 228);
+}
+.text-image-container{
+    display: flex;
+    flex-direction: row;
+}
+.text-part{
+    display: inline-block;
+    vertical-align: middle;
+    clear: right;
+}
+.image-part{
+    display: inline-block;
+    vertical-align: middle;
+    
+}
