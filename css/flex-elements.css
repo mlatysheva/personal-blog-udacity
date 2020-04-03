@@ -1,32 +1,23 @@
 /* Containers with text and image */
 
 
-.text-image-container {
+.text-image-container{
     display: flex;
     flex-direction: row;
-    width: 100%;
 }
-.image-part {
+.text-part{
     display: inline-block;
+    vertical-align: middle;
+    clear: right;
     width: fit-content;
-    justify-content: flex-start;
-    padding: 5px;
+    padding: 15px;
 }
-
-.text-part {
+.image-part{
     display: inline-block;
-    justify-content: flex-start;
-    width: auto;
+    vertical-align: middle;
+    width: fit-content;
+    justify-content: flex-end;
     padding: 5px;
+    
 }
 
-.menu-item {
-    display: inline-flex;
-    padding: 5px;
-    margin: 10px;
-    color: papayawhip;
-    background-color: rgb(144, 132, 148);
-    border-radius: 5px;
-    width: auto;
-    height: auto;
-}

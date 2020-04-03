@@ -12,6 +12,9 @@ a {
 p {
     line-height: 1.2em;
   }
+a {
+    text-decoration: underline;
+}
 
 /* id selectors */
 #content {
@@ -44,6 +47,8 @@ button {
     border-radius: 5px;
     font-size: larger;
 }
+
 button:hover {
     background-color: rgb(141, 112, 148);
+    cursor: pointer;
 }

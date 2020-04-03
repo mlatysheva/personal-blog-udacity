@@ -1,21 +1,20 @@
 @import "elements.css";
 @import "images.css";
-/*@import "flex-elements.css";*/
+@import "flex-elements.css";
 
-/*Small screen layout*/
+/* Small screen layout */
 
 .container {
     display: grid;
-    grid-template-rows: 25vw 15vw 1fr 30vw 10vw;
-    grid-template-columns: 100%;
+    row-gap: 5px;
     grid-template-areas: 
     "hd"
     "nav"
-    "feat" 
+    "feat"
     "rt"
     "ft";
-    border: 3px solid rgb(78, 59, 83);
     width: 100%;
+    overflow: auto;
     height: auto;
 }
 .header {
@@ -124,33 +123,4 @@
     text-align: center;
 
 }
-
- *{
-    border: 1px solid red !important;
-  }
-
-
-/* Containers with text and image */
-
-
-.text-image-container{
-    display: flex;
-    flex-direction: row;
-}
-.text-part{
-    display: inline-block;
-    vertical-align: middle;
-    clear: right;
-    width: fit-content;
-    padding: 15px;
-}
-.image-part{
-    display: inline-block;
-    vertical-align: middle;
-    width: fit-content;
-    justify-content: flex-end;
-    padding: 5px;
-    
-}
-
 

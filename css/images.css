@@ -2,3 +2,9 @@ img{
     box-shadow: 2px 2px rgb(80, 60, 90);
     padding: 10px;
 }
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
