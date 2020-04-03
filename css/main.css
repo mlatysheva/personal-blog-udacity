@@ -1,12 +1,26 @@
 @import “./layout”;
 @import “./images”;
 @import “./blog-cards”;
+
+/*Small screen layout*/
+
+.container {
+    display: grid;
+    grid-template-rows: 100px 65px 1fr 1fr 50px;
+    grid-template-areas: 
+    "hd"
+    "nav"
+    "feat" 
+    right"
+    "ft";
+    border: 3px solid rgb(78, 59, 83);
+}
 /* Type selectors */
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    color: rgb(50, 67, 77);
-    background-color: rgb(174, 199, 211);
+    color: rgb(78, 59, 83);
+    background-color: rgb(215, 209, 219);
     margin: 5px;
 }
 h1,
@@ -19,15 +33,15 @@ p {
   
 }
 a {
-    color: rgb(32, 99, 143);
+    color:rgb(78, 59, 83);
     
 }
 p {
-    color: rgb(5, 30, 44);
+    color: rgb(78, 59, 83);
     line-height: 1.2em;
   }
 button {
-    background-color: rgb(32, 99, 143);
+    background-color: rgb(118, 105, 121);
     height: 50px;
     width: 150px;
     color: papayawhip;
@@ -35,59 +49,51 @@ button {
     font-size: larger;
 }
 button:hover{
-    background-color: rgb(17, 50, 71);
+    background-color: rgb(103, 94, 105);
 }
 /* id selectors */
 #content {
-    color: rgb(5, 30, 44);
+    color: rgb(78, 59, 83);
     font-size: medium;
 }
 
 /* Class selectors */
-.container {
-    /*display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: 
-    "hd"
-    "nav"
-    "mn"
-    "art"
-    "right"
-    "ft";*/
-    border: 3px solid rgb(32, 99, 143);
-}
 .header {
-    display: grid;
     grid-area: hd;
-    border-bottom: 2px solid rgb(32, 99, 143);
+    border-bottom: 2px solid rgb(78, 59, 83);
     padding: 10px;
     text-align: center;
+    color:  bisque;
+    text-shadow: 2px 2px rgb(78, 59, 83);
     font-size: 3em;
-    font-weight: bold;
+    background-image: url("../images/header-image.JPG");
+    background-size: auto;
+    background-repeat: no-repeat;
 
 }
-.main {
+.menu {
     display: flex;
     flex-direction: row;
-    padding: 10px;
-    flex-grow: 1;
+    justify-content: flex-start;
+    width: 100%;
+    grid-area: nav;
 }
 
 .footer {
-    display: grid
     grid-area: ft;
-    border-top: 2px solid rgb(32, 99, 143);
+    border-top: 2px solidrgb(78, 59, 83);
     padding: 10px;
     text-align: center;
 
 }
 .posts {
-    border: 2px solid rgb(32, 99, 143);
+    border: 2px solid rgb(78, 59, 83);
     padding: 10px;
     margin-right: 5px;
     margin-bottom: 10px;
     margin-left: 10px;
     flex-grow: 3;
+    grid-area: feat;
 }
 .post-card{
     display: flex;
@@ -97,13 +103,15 @@ button:hover{
     flex-grow: 3;
 }
 .right {
-    border: 2px solid rgb(32, 99, 143);
-    width: 30%;
+    display: flex;
+    border: 2px solid rgb(78, 59, 83);
+    width: 85%;
     padding: 10px;
     margin-left: 5px;
     margin-bottom: 10px;
     margin-right: 10px;
-    flex-grow: 1;
+    flex-direction: column;
+    grid-area: right;
 }
  *{
     border: 1px solid red !important;
@@ -117,12 +125,12 @@ button:hover{
     margin-top: 10px;
     margin-bottom: 10px;
     color: papayawhip;
-    background-color: rgb(106, 173, 211);
+    background-color: rgb(144, 132, 148);
     border-radius: 5px;
 }
 
 .menu-item:hover{
-    background-color: rgb(197, 219, 228);
+    background-color: rgb(187, 170, 190);
 }
 .text-image-container{
     display: flex;
@@ -132,9 +140,30 @@ button:hover{
     display: inline-block;
     vertical-align: middle;
     clear: right;
+    width: 100%;
+    padding: 15px;
 }
 .image-part{
     display: inline-block;
     vertical-align: middle;
+    width: fit-content;
+    justify-content: flex-end;
+    padding: 5px;
     
 }
+/* Layout for larger screens */
+@media(min-width: 1100px){
+    .container {
+        display: grid;
+        grid-template-rows: 100px 65px 1fr 50px;
+        grid-template-columns: 1fr 30%;
+        grid-template-areas: 
+        "hd hd"
+        "nav nav"
+        "feat right"
+        "ft ft";
+        border: 3px solid rgb(78, 59, 83);
+    }
+}
+
+
