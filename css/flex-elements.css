@@ -1,0 +1,32 @@
+/* Containers with text and image */
+
+
+.text-image-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.image-part {
+    display: inline-block;
+    width: fit-content;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+.text-part {
+    display: inline-block;
+    justify-content: flex-start;
+    width: auto;
+    padding: 5px;
+}
+
+.menu-item {
+    display: inline-flex;
+    padding: 5px;
+    margin: 10px;
+    color: papayawhip;
+    background-color: rgb(144, 132, 148);
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+}

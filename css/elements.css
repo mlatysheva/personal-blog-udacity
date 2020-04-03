@@ -1,0 +1,49 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    color:rgb(78, 59, 83);
+    
+}
+p {
+    line-height: 1.2em;
+  }
+
+/* id selectors */
+#content {
+    color: rgb(78, 59, 83);
+    font-size: medium;
+}
+
+#email {
+    width: auto;
+    align-content: center;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: rgb(78, 59, 83);
+    background-color: rgb(215, 209, 219);
+    margin: 5px;
+}
+
+.menu-item:hover{
+    background-color: rgb(187, 170, 190);
+}
+
+button {
+    background-color: rgb(118, 105, 121);
+    height: 50px;
+    width: 150px;
+    color: papayawhip;
+    border-radius: 5px;
+    font-size: larger;
+}
+button:hover {
+    background-color: rgb(141, 112, 148);
+}
